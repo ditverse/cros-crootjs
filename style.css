@@ -1,0 +1,83 @@
+/* style.css — Custom styles untuk Demo JSCroot CORS */
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* ---- CARD ---- */
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 36px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* ---- INPUT ---- */
+.input-field {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: #1e293b;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-field:focus {
+  border-color: #6366f1;
+}
+
+/* ---- BUTTON ---- */
+.btn-cari {
+  padding: 10px 20px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.btn-cari:hover {
+  background: #4f46e5;
+}
+
+/* ---- BORDER OUTPUT (muncul saat ada hasil) ---- */
+.hasil-aktif {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  background: #f8fafc;
+}
+
+/* ---- HASIL / POKEMON CARD ---- */
+#hasil h3 {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+/* Sprite pokémon lebih besar */
+#hasil img {
+  width: 160px;
+  height: 160px;
+  image-rendering: pixelated; /* biar pixel art-nya tetap tajam */
+  margin: 8px auto;
+  display: block;
+}
+
+#hasil p {
+  color: #64748b;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo JSCroot CORS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-100 min-h-screen flex items-center justify-center p-6">
+
+  <div class="card">
+
+    <h2 class="text-xl font-semibold text-slate-800 mb-1">🔍 Cari Data Pokémon</h2>
+    <p class="text-sm text-slate-400 mb-6">Ketik nama pokémon lalu tekan Cari</p>
+
+    <div class="flex gap-2 mb-6">
+      <input
+        id="pokemon"
+        type="text"
+        placeholder="Contoh: pikachu"
+        class="input-field"
+      />
+      <button id="btnCari" class="btn-cari">Cari</button>
+    </div>
+
+    <div id="hasil" class="text-sm text-slate-400 text-center">
+      Masukkan nama pokémon di atas.
+    </div>
+
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
